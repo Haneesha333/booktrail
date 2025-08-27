@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(120deg, #e87d59, #9681e4); /* Elegant gradient */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to top */
+    overflow-x: hidden;
+}
+
+.container {
+    margin-top: 10vh;
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    font-size: 6rem;
+    margin-bottom: 30px;
+    color: #dd2e9a;
+    text-shadow: 2px 2px 5px #000;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+    margin-bottom: 40px;
+}
+
+input[type="text"] {
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    border: none;
+    width: 300px;
+    max-width: 100%;
+    outline: none;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background-color: #ba4df4;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ec853b;
+}
+
+.recommendations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+.card {
+    background: rgba(240, 83, 83, 0.1);
+    color: #fddbdb;
+    padding: 15px;
+    border-radius: 12px;
+    width: 250px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Responsive styles for mobile */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+    }
+
+    form {
+        flex-direction: column;
+        gap: 12px;
+        padding: 15px 20px;
+        margin-bottom: 30px;
+    }
+
+    input[type="text"] {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    button {
+        width: 90%;
+        font-size: 1.1rem;
+        padding: 12px 0;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
